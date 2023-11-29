@@ -7,7 +7,7 @@ Certainly! Below is a summary for your project README:
 The Event Management System is a web application built using Django, a Python web framework. It provides functionality for users to create, manage, and register for events. The system ensures user authentication, allowing only registered users to participate in events. Additionally, it features a user-friendly interface and a basic search functionality.
 
 ### Live Demo: 
-[Event Management System](ssifu.pythonanywhere.com)
+[Event Management System](https://ssifu.pythonanywhere.com)
 
 ## Features
 
@@ -83,6 +83,6 @@ The project consists of Django models for Users, Events, and UserEventRegistrati
 
 The API documentation can be accessed using one of the following methods:
 
-- [Django REST Framework Docs](http://localhost:8000/docs)
+- [http://localhost:8000/docs](http://localhost:8000/docs)
 
 Visit [http://localhost:8000](http://localhost:8000) in your browser to access the application.
