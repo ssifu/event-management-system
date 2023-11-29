@@ -1,5 +1,4 @@
-# from django.contrib.auth.models import User
-from enum import unique
+
 from django.db import models
 
 # Create your models here.
@@ -26,6 +25,11 @@ class Event(models.Model):
     location_name = models.CharField(max_length=100, blank=True, null=True)
     max_slots = models.IntegerField()
     created_at = models.DateTimeField()
+    registered_users = models.ManyToManyField('Users', through='UserEventRegistration')
+
+    @property
+    def available_slots(self):
+        return self.max_slots - self.registered_users.count()
 
     def formatted_datetime(self):
         return {
@@ -35,7 +39,7 @@ class Event(models.Model):
         }
 
     def __str__(self):
-        return self.title
+        return f"{self.title} - {self.available_slots}"
 
 
 class UserEventRegistration(models.Model):

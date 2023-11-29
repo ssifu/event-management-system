@@ -1,11 +1,6 @@
 <div class="results-summary">
     <div class="results" data-spacing="large">
       <p class="result-score"><span>{{event.formatted_datetime.date}}</span> {{event.formatted_datetime.month}}</p>
-      {% comment %} <form action="{% url "event_registration" event.event.id %}" method="POST">
-        {% csrf_token %}
-        <input type="hidden" name="event_id" value={{event.event.id}}/>
-        <button class="register-button">Register</button>
-      </form> {% endcomment %}
       {% if not is_registered %}
         <form action="{% url 'event_registration' event.event.id %}" method="POST">
           {% csrf_token %}
@@ -16,13 +11,8 @@
     </div>
     <div class="summary">
       <h2 class="section-title">{{event.event.title}}</h2>
-      {% comment %} <button class="btn" data-spacing="large">Continue</button> {% endcomment %}
       <p class="description">{{event.event.description}}</p>
       <div class="details">
-        {% comment %} <div class="event-date">
-          <i class="fa-regular fa-calendar-days fa-2xl"></i>
-          <p>March 10</p>
-        </div> {% endcomment %}
         <div class="event-details">
           <i class="fa-regular fa-clock fa-xl"></i>
           <p>{{event.formatted_datetime.time}}</p>
@@ -33,7 +23,7 @@
         </div>
       </div>
       <div class="available">
-        <i class="fa-solid fa-user-group fa-xl"></i><span>50</span>
+        <i class="fa-solid fa-user-group fa-xl"></i><span>{{event.event.available_slots}}</span>
       </div>
     </div>
   </div>

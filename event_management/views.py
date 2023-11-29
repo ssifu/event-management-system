@@ -1,12 +1,9 @@
-from asyncio.windows_events import NULL
-from django.forms import EmailInput
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
-from django.contrib.auth.models import User
 from django.contrib import messages
-from django.contrib.auth import authenticate, login
 from django.shortcuts import get_object_or_404
 from django.db.models import Count
+from django.views import View
 
 from django.urls import reverse
 
@@ -15,24 +12,16 @@ from .models import Event, Users, UserEventRegistration
 # Create your views here.
 
 
-def SignupPage(request):
+class SignupPageView(View):
+    def get(self, request):
+        return render(request, "event_management/signup_form.html")
 
-    username_input = ''
-    firstname_input = ''
-    lastname_input = ''
-    email_input = ''
-
-    if request.method == "POST":
+    def post(self, request):
         firstname = request.POST["firstname"]
         lastname = request.POST["lastname"]
         username = request.POST["username"]
         email = request.POST["email"]
         password = request.POST["password"]
-
-        username_input = username
-        firstname_input = firstname
-        lastname_input = lastname
-        email_input = email
 
         if Users.objects.filter(username=username).exists():
             messages.error(request, "Username already exists",
@@ -44,12 +33,15 @@ def SignupPage(request):
 
         new_user.save()
 
-        return redirect("/login")
-    return render(request, "event_management/signup_form.html")
+        return redirect(reverse("login"))
 
 
-def LoginPage(request):
-    if request.method == "POST":
+class LoginPageView(View):
+
+    def get(self, request):
+        return render(request, "event_management/login_form.html")
+
+    def post(self, request):
         username = request.POST["username"]
         password = request.POST["password"]
 
@@ -69,74 +61,72 @@ def LoginPage(request):
             home_url = reverse('home', kwargs={'username': username})
             return redirect(home_url)
 
-    return render(request, "event_management/login_form.html")
 
-
-def LogoutPage(request):
-    request.session.clear()
-    return redirect("login")
-
-
-def HomePage(request, username):
-    if 'username' in request.session and request.session['username'] == username:
-        try:
-            user = Users.objects.get(username=username)
-
-            # Retrieve registered events for the user
-            registered_events = UserEventRegistration.objects.filter(
-                user=user).values_list('event_id', flat=True)
-            print(f"registered_events: {registered_events}\n\n")
-
-            # Get all events
-            all_events = Event.objects.annotate(
-                registration_count=Count('usereventregistration')).all()
-
-            print(f"all_events: {all_events}\n\n")
-
-            # Separate registered and unregistered events
-            registered_event_ids = set(registered_events)
-
-            print(f"registered_event_ids: {registered_event_ids}\n\n")
-            registered_events = [
-                event for event in all_events if event.id in registered_event_ids]
-
-            print(f"registered_events: {registered_events}\n\n")
-            unregistered_events = [
-                event for event in all_events if event.id not in registered_event_ids]
-
-            print(f"unregistered_events: {unregistered_events}\n\n")
-
-            fullname = (user.first_name or "") + " " + (user.last_name or "")
-            formatted_registered_events = [
-                {"event": event, "formatted_datetime": event.formatted_datetime()} for event in registered_events]
-            formatted_unregistered_events = [
-                {"event": event, "formatted_datetime": event.formatted_datetime()} for event in unregistered_events]
-
-            return render(request, "event_management/home.html", {
-                "user_fullname": fullname,
-                "registered_events": formatted_registered_events,
-                "unregistered_events": formatted_unregistered_events,
-            })
-
-        except Users.DoesNotExist:
-            # Handle the case when the user does not exist
-            return HttpResponse("User not found", status=404)
-    else:
+class LogoutView(View):
+    def get(self, request):
+        request.session.clear()
         return redirect("login")
 
 
-def EventRegistration(request, event_id):
-    try:
-        user = Users.objects.get(username=request.session['username'])
-        event = get_object_or_404(Event, id=event_id)
-    except Users.DoesNotExist:
-        # Handle the case when the user does not exist
-        return HttpResponse("User not found", status=404)
-    except Event.DoesNotExist:
-        # Handle the case when the event does not exist
-        return HttpResponse("Event not found", status=404)
+class HomePageView(View):
+    def get(self, request, username):
+        if 'username' in request.session and request.session['username'] == username:
+            try:
+                user = Users.objects.get(username=username)
 
-    new_registered_event = UserEventRegistration(user=user, event=event)
-    new_registered_event.save()
+                # Retrieve registered events for the user
+                registered_events = UserEventRegistration.objects.filter(
+                    user=user).values_list('event_id', flat=True)
 
-    return redirect(reverse('home', kwargs={'username': request.session['username']}))
+                # Get all events
+                all_events = Event.objects.annotate(
+                    registration_count=Count('usereventregistration')).all()
+
+                # Separate registered and unregistered events
+                registered_event_ids = set(registered_events)
+                registered_events = [
+                    event for event in all_events if event.id in registered_event_ids]
+                unregistered_events = [
+                    event for event in all_events if event.id not in registered_event_ids]
+
+                fullname = (user.first_name or "") + \
+                    " " + (user.last_name or "")
+                formatted_registered_events = [
+                    {"event": event, "formatted_datetime": event.formatted_datetime()} for event in registered_events]
+                formatted_unregistered_events = [
+                    {"event": event, "formatted_datetime": event.formatted_datetime()} for event in unregistered_events]
+
+                return render(request, "event_management/home.html", {
+                    "user_fullname": fullname,
+                    "registered_events": formatted_registered_events,
+                    "unregistered_events": formatted_unregistered_events,
+                })
+
+            except Users.DoesNotExist:
+                # Handle the case when the user does not exist
+                return HttpResponse("User not found", status=404)
+        else:
+            return redirect("login")
+
+
+class EventRegistrationView(View):
+    def post(self, request, event_id):
+        try:
+            user = Users.objects.get(username=request.session['username'])
+            event = get_object_or_404(Event, id=event_id)
+        except Users.DoesNotExist:
+            # Handle the case when the user does not exist
+            return HttpResponse("User not found", status=404)
+        except Event.DoesNotExist:
+            # Handle the case when the event does not exist
+            return HttpResponse("Event not found", status=404)
+        
+        if UserEventRegistration.objects.filter(user=user, event=event).exists():
+            return HttpResponse("User is already registered for the event", status=400)
+
+        new_registered_event = UserEventRegistration(user=user, event=event)
+        new_registered_event.save()
+
+        event.registered_users.add(user)
+
+        return redirect(reverse('home', kwargs={'username': request.session['username']}))

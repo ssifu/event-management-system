@@ -1,0 +1,8 @@
+# .gitignore
+
+django_project_venv/
+.vscode/
+
+.env
+
+staticfiles/
