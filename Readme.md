@@ -1,5 +1,3 @@
-Certainly! Below is a summary for your project README:
-
 # Event Management System
 
 ## Overview
