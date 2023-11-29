@@ -1,4 +1,5 @@
 from asyncio.windows_events import NULL
+from django.forms import EmailInput
 from django.http import HttpResponse
 from django.shortcuts import redirect, render
 from django.contrib.auth.models import User
@@ -15,6 +16,12 @@ from .models import Event, Users, UserEventRegistration
 
 
 def SignupPage(request):
+
+    username_input = ''
+    firstname_input = ''
+    lastname_input = ''
+    email_input = ''
+
     if request.method == "POST":
         firstname = request.POST["firstname"]
         lastname = request.POST["lastname"]
@@ -22,10 +29,15 @@ def SignupPage(request):
         email = request.POST["email"]
         password = request.POST["password"]
 
+        username_input = username
+        firstname_input = firstname
+        lastname_input = lastname
+        email_input = email
+
         if Users.objects.filter(username=username).exists():
             messages.error(request, "Username already exists",
                            extra_tags="duplicate_username")
-            return redirect("/signup")
+            return redirect("signup")
 
         new_user = Users(username=username, email=email,
                          password=password, first_name=firstname, last_name=lastname)
@@ -33,7 +45,6 @@ def SignupPage(request):
         new_user.save()
 
         return redirect("/login")
-
     return render(request, "event_management/signup_form.html")
 
 
@@ -46,7 +57,7 @@ def LoginPage(request):
             user = Users.objects.get(username=username)
         except Users.DoesNotExist:
             messages.error(
-                request, "User with this username does not exist", extra_tags="user_not_found")
+                request, "User with this username does not exist. Try again!", extra_tags="user_not_found")
             return redirect("login")
 
         if password != user.password:

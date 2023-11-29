@@ -26,19 +26,25 @@
               <div class="field padding-bottom--24">
                 <div class="grid--50-50">
                   <label class="input-label" for="password">Password</label>
-                  <div class="reset-pass">
-                    <a href="#">Forgot your password?</a>
-                  </div>
                 </div>
                 <input type="password" name="password" />
               </div>
+              {% if messages %}
+                      {% for message in messages %}
+                          {% if 'user_not_found' in message.tags %}
+                              <p class="error-message">{{ message }}</p>
+                              {% elif "incorrect_password" in message.tags %}
+                                <p class="error-message">{{ message }}</p>
+                          {% endif %}
+                      {% endfor %}
+              {% endif %}
               <div class="field padding-bottom--24">
                 <input type="submit" name="submit" value="Login" />
               </div>
+              
               <div class="field padding-bottom--24">
                 <p>Don't have an account? <a href="/signup">Signup</a></p>
               </div>
-              {% if message in messages %}<h2>{{message}}</h2>{% endif %}
               {% comment %}
               <div class="field padding-bottom--24">
                 <h3>{%message%}</h3>

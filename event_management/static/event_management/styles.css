@@ -149,7 +149,7 @@ label {
 }
 
 .input-label {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .reset-pass a,label {
@@ -169,16 +169,18 @@ label {
 
 .error-message {
   color: rgb(229, 53, 53);
-  font-size: 1.25rem;
-  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-p {
-  font-size: 1rem;
+.field p {
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 .field input {
-    font-size: 16px;
+    font-size: 1.5rem;
     line-height: 28px;
     padding: 8px 16px;
     width: 100%;
@@ -197,7 +199,7 @@ p {
 }
 
 input[type="submit"] {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     background-color: rgb(84, 105, 212);
     border: 1px;
