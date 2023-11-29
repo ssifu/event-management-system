@@ -50,4 +50,36 @@ The project consists of Django models for Users, Events, and UserEventRegistrati
    python manage.py runserver
    ```
 
+## API Endpoints
+
+### List of All Events
+
+- **Endpoint:** `/api/events/`
+- **Method:** GET
+- **Description:** Retrieve a list of all events.
+
+### Details of a Specific Event
+
+- **Endpoint:** `/api/events/<event_id>/`
+- **Method:** GET
+- **Description:** Retrieve details of a specific event identified by `event_id`.
+
+### User Registration for an Event
+
+- **Endpoint:** `/api/user/register-event/`
+- **Method:** POST
+- **Description:** Register a user for a specific event.
+
+### User's Registered Events
+
+- **Endpoint:** `/api/user/registered-events/<user_id>/`
+- **Method:** GET
+- **Description:** Retrieve a list of events registered by a user identified by `user_id` along with registration dates.
+
+## API Documentation
+
+The API documentation can be accessed using one of the following methods:
+
+- [Django REST Framework Docs](http://localhost:8000/docs)
+
 Visit [http://localhost:8000](http://localhost:8000) in your browser to access the application.
