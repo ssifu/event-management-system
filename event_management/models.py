@@ -11,6 +11,7 @@ class Users(models.Model):
     password = models.CharField(max_length=255)
     first_name = models.CharField(max_length=50, blank=True, null=True)
     last_name = models.CharField(max_length=50, blank=True, null=True)
+    registered_events = models.ManyToManyField('Event', through='UserEventRegistration')
 
     def __str__(self):
         return self.username

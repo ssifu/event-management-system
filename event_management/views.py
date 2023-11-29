@@ -4,10 +4,12 @@ from django.contrib import messages
 from django.shortcuts import get_object_or_404
 from django.db.models import Count
 from django.views import View
+from rest_framework import generics
 
 from django.urls import reverse
 
 from .models import Event, Users, UserEventRegistration
+from .serializers import EventSerializer, UserEventRegistrationSerializer
 
 # Create your views here.
 
@@ -120,7 +122,7 @@ class EventRegistrationView(View):
         except Event.DoesNotExist:
             # Handle the case when the event does not exist
             return HttpResponse("Event not found", status=404)
-        
+
         if UserEventRegistration.objects.filter(user=user, event=event).exists():
             return HttpResponse("User is already registered for the event", status=400)
 
@@ -128,5 +130,32 @@ class EventRegistrationView(View):
         new_registered_event.save()
 
         event.registered_users.add(user)
+        user.registered_events.add(event)
 
         return redirect(reverse('home', kwargs={'username': request.session['username']}))
+
+# API endpoints view
+
+
+class EventList(generics.ListCreateAPIView):
+    queryset = Event.objects.all()
+    serializer_class = EventSerializer
+
+
+class EventDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Event.objects.all()
+    serializer_class = EventSerializer
+
+
+class UserRegistration(generics.CreateAPIView):
+    queryset = UserEventRegistration.objects.all()
+    serializer_class = UserEventRegistrationSerializer
+
+class UserRegisteredEvents(generics.ListAPIView):
+    serializer_class = UserEventRegistrationSerializer
+
+    def get_queryset(self):
+        user_id = self.kwargs['user_id']
+        return UserEventRegistration.objects.filter(user_id=user_id)
+
+
