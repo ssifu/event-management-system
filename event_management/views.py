@@ -71,7 +71,7 @@ class LogoutView(View):
 
 
 class HomePageView(View):
-    def get(self, request, username):
+    def get(self, request, username=""):
         if 'username' in request.session and request.session['username'] == username:
             try:
                 user = Users.objects.get(username=username)
