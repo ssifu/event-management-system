@@ -3,6 +3,4 @@
 django_project_venv/
 .vscode/
 
-staticfiles/
-
 .env
