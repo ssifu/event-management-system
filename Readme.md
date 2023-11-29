@@ -51,11 +51,3 @@ The project consists of Django models for Users, Events, and UserEventRegistrati
    ```
 
 Visit [http://localhost:8000](http://localhost:8000) in your browser to access the application.
-
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to the project, please follow the [contribution guidelines](CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as per the license terms.
