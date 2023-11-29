@@ -1,0 +1,427 @@
+{
+  "search_metadata": {
+    "id": "65663a2747ccf1a9edcaacb6",
+    "status": "Success",
+    "json_endpoint": "https://serpapi.com/searches/437f7a02c3ec5ac9/65663a2747ccf1a9edcaacb6.json",
+    "created_at": "2023-11-28 19:06:15 UTC",
+    "processed_at": "2023-11-28 19:06:15 UTC",
+    "google_events_url": "https://www.google.com/search?q=Events+in+Austin&ibp=htl;events&hl=en&gl=us",
+    "raw_html_file": "https://serpapi.com/searches/437f7a02c3ec5ac9/65663a2747ccf1a9edcaacb6.html",
+    "total_time_taken": 2.12
+  },
+  "search_parameters": {
+    "q": "Events in Austin",
+    "engine": "google_events",
+    "hl": "en",
+    "gl": "us"
+  },
+  "search_information": {
+    "events_results_state": "Results for exact spelling"
+  },
+  "events_results": [
+    {
+      "title": "SOLD OUT: Houndmouth: 3-DAY PASS",
+      "date": {
+        "start_date": "Nov 30",
+        "when": "Thu, Nov 30, 12 – 4 AM"
+      },
+      "address": ["Antone's Nightclub, 305 E 5th St.", "Austin, TX"],
+      "link": "https://www.kxan.com/calendar/?_escaped_fragment_=/show/?start=2023-11-19#!/details/Houndmouth-at-Antone-s-NIGHT-1/12471507/2023-11-30T20",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=wJxZY1yzabdXo2CPNtim_lqdX-Q8xzWkyssqUarlKi2mivT3yqEnMarz80fGHQq2XhQc4KEM-SxYOtj6jNPF_O4ck_fUldsOgucvv6BupRjzq5rsWgQ",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x8644b5091bd69d65:0x945d683a5e34b71f?sa=X&ved=2ahUKEwii2aLnseeCAxVKSzABHbJVCYoQ9eIBegQIARAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x8644b5091bd69d65%3A0x945d683a5e34b71f&engine=google_maps&google_domain=google.com&hl=en&q=Events+in+Austin&type=place"
+      },
+      "description": "Houndmouth at Antone's -NIGHT ONE- THU · NOV 30, 2023 Doors: 7:00 pm / Show: 8:00 pm Tickets: bit.ly/3K4JZG1 3-Day Pass: bit.ly/477o5vN",
+      "ticket_info": [
+        {
+          "source": ".sjBi9c.sjBi9c::after{content:none}.qwJzfb{flex-shrink:0}.BYbUcd{overflow:hidden;}.BYbUcd img{height:100%;width:100%}Ticketmaster.com",
+          "link": "https://www.ticketmaster.com/sold-out-houndmouth-3day-pass-austin-texas-11-30-2023/event/3A005EF1A6021D2C",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Ticketmaster.com",
+          "link": "https://ticketmaster.evyy.net/c/253520/271177/4272?u=https%3A%2F%2Fwww.ticketmaster.com%2Fsold-out-houndmouth-3day-pass-austin-texas-11-30-2023%2Fevent%2F3A005EF1A6021D2C",
+          "link_type": "tickets"
+        },
+        {
+          "source": "KXAN",
+          "link": "https://www.kxan.com/calendar/?_escaped_fragment_=/show/?start=2023-11-19#!/details/Houndmouth-at-Antone-s-NIGHT-1/12471507/2023-11-30T20",
+          "link_type": "more info"
+        },
+        {
+          "source": "Do512",
+          "link": "https://do512.com/events/2023/11/30/houndmouth-one-night-two-night-three-night-tour-tickets",
+          "link_type": "more info"
+        },
+        {
+          "source": "The Austin Chronicle",
+          "link": "https://www.austinchronicle.com/performers/1397920/",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Antone's Nightclub",
+        "reviews": 1402,
+        "link": "https://www.google.com/search?sca_esv=6ca579d220eaa429&gl=us&hl=en&q=Antone%27s+Nightclub&ludocid=10690815690345330463&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe-pNT8hWUTIF7Ip1uuuE3LILI8OmyX9cobXCZNsCOEIZ_TYgLHOynGMw&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMqpGCrZZ5Kxk02K57OpcxzX3QMKfOOJeFLU4CVfaYt3kcCE2rs22Ha24q9A&s=10"
+    },
+    {
+      "title": "Candlebox",
+      "date": {
+        "start_date": "Dec 1",
+        "when": "Fri, Dec 1, 5:30 – 11:00 PM"
+      },
+      "address": ["Haute Spot, 1501 E New Hope Dr", "Cedar Park, TX"],
+      "link": "https://hautespot.live/calendar/riptide-candlebox-3-doors-down-acoustic",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=ZTvHmE0uQNNdzpIB3tMwdRNy7U68j5aD35ovKcSppRcFKVbeupQRATs0ylyJ32Ajihx7tIA3GGnRsXKtS6Va8xsJSi0s7L-zzNWXECOpfPjiCk7qWOQ",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x865b2d2f76d2be53:0x9aee4d078a09a6cd?sa=X&ved=2ahUKEwii2aLnseeCAxVKSzABHbJVCYoQ9eIBegQICRAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x865b2d2f76d2be53%3A0x9aee4d078a09a6cd&engine=google_maps&google_domain=google.com&hl=en&q=Events+in+Austin&type=place"
+      },
+      "description": "Join us on Friday Dec. 1st for a special benefit show with RiptideSociety.org including acoustic performances by Candlebox and 3 Doors Down featuring Brad Arnold, Chris Henderson and Chet Roberts...",
+      "ticket_info": [
+        {
+          "source": "Etix.com",
+          "link": "http://www.etix.com/ticket/p/44216213/riptide-event-with-acoustic-performances-by-candlebox-and-3-doors-down-featuring-brad-arnoldchris-henderson-chet-roberts-cedar-park-haute-spot-lightstream-presents",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Haute Spot",
+          "link": "https://hautespot.live/calendar/riptide-candlebox-3-doors-down-acoustic",
+          "link_type": "more info"
+        },
+        {
+          "source": "Spotify",
+          "link": "https://open.spotify.com/concert/1NytaxmvRZnX3AkatMNdvG",
+          "link_type": "more info"
+        },
+        {
+          "source": "Deezer",
+          "link": "https://www.deezer.com/cs/artist/340",
+          "link_type": "more info"
+        },
+        {
+          "source": "Undercover Tourist",
+          "link": "https://www.undercovertourist.com/austin/haute-spot-event-venue/candlebox-tickets/2431991/",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Haute Spot",
+        "reviews": 531,
+        "link": "https://www.google.com/search?sca_esv=6ca579d220eaa429&gl=us&hl=en&q=Haute+Spot&ludocid=11163945221074036429&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4KSwsrQg0cvc6xAUWacsaBB2sHxq8iUe0zclqgTc&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8rDbq252FrJe_vGz_0fUgllDBfG2Ba2XbL4afYvC46g&s=10"
+    },
+    {
+      "title": "The Browning",
+      "date": {
+        "start_date": "Dec 2",
+        "when": "Sat, Dec 2, 2 – 7 PM"
+      },
+      "address": [
+        "Come and Take It Live, 2015 E Riverside Dr bldg 4",
+        "Austin, TX"
+      ],
+      "link": "https://www.etix.com/ticket/p/87453313/atxmp-showcase-2023-featuring-the-browningleft-to-suffer-and-more-austin-come-and-take-it-live",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=31tA4z57uW_08RyTkg2BbyTfeYoBdtVEd8iMEvqcltO0FAJiDrnenjod11iX4Qtl0lr8PiMqc25kUdvVynIxZZvcEAPyGSSIO0XMDc4EjzTGMPmqrfk",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x8644b44509e06439:0xb99a54b8e8a4dfc7?sa=X&ved=2ahUKEwii2aLnseeCAxVKSzABHbJVCYoQ9eIBegQIERAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x8644b44509e06439%3A0xb99a54b8e8a4dfc7&engine=google_maps&google_domain=google.com&hl=en&q=Events+in+Austin&type=place"
+      },
+      "description": "Come and Take It Productions presents... ATXMP SHOWCASE 2023 Featuring... THE BROWNING LEFT TO SUFFER TALLAH TRACHEOTOMY MOUTHBREATHER LIVING HOLLOW STONESIDE LAMENT MIRROR LAKE SOZORA FAMILIAR...",
+      "ticket_info": [
+        {
+          "source": "Etix.com",
+          "link": "http://www.etix.com/ticket/p/87453313/atxmp-showcase-2023-featuring-the-browningleft-to-suffer-and-more-austin-come-and-take-it-live",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Spotify",
+          "link": "https://open.spotify.com/concert/4QNBncMfTpGOiqZYByNqYb",
+          "link_type": "more info"
+        },
+        {
+          "source": "Expedia.com",
+          "link": "https://www.expedia.com/event-tickets/the-browning-tickets.p",
+          "link_type": "more info"
+        },
+        {
+          "source": "Undercover Tourist",
+          "link": "https://www.undercovertourist.com/austin/come-and-take-it-live/the-browning-tickets/2425462/",
+          "link_type": "more info"
+        },
+        {
+          "source": "Bandsintown",
+          "link": "https://www.bandsintown.com/e/1029781054-the-browning-at-come-and-take-it-live",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Come and Take It Live",
+        "reviews": 1495,
+        "link": "https://www.google.com/search?sca_esv=6ca579d220eaa429&gl=us&hl=en&q=Come+and+Take+It+Live&ludocid=13374095196583944135&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnFalNJ0phnsCtLxrMlxb1EmuFFuFddh1OOx5yoTU&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYJxWAusayVuaj9G93lS6bLqd3W10-i9yrqaaYj9ILWNCTyC_NnjB3M712mw&s=10"
+    },
+    {
+      "title": "TOGETHER TOUR",
+      "date": {
+        "start_date": "Dec 3",
+        "when": "Sun, Dec 3, 9 AM – 12 PM"
+      },
+      "address": ["Highbrow Lowbrow Austin, 207 Chalmers Ave", "Austin, TX"],
+      "link": "https://www.daybreaker.com/event/tenyeartour-atx3/",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=odVhMeQr83Q1QcXAITW6teqr59I9nxVG23rcD5PX7CaEz5EMQMfFIp5aE-XFH99oBRVXFYHJHznTbfFMxurx3uTvqzYhoPqOkxqpVtq5LCuFkE0Rm4w",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x8644b5d00c9e4881:0x2044ba7557353f8c?sa=X&ved=2ahUKEwii2aLnseeCAxVKSzABHbJVCYoQ9eIBegQIGRAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x8644b5d00c9e4881%3A0x2044ba7557353f8c&engine=google_maps&google_domain=google.com&hl=en&q=Events+in+Austin&type=place"
+      },
+      "description": "“Even after all this time the sun never says to the earth, 'You owe me.' Look what happens with a love like that. It lights the whole sky.” Hāfiz It's all for you. 10 years of love & mischief. May...",
+      "ticket_info": [
+        {
+          "source": "Eventbrite.com",
+          "link": "https://www.eventbrite.com/e/daybreaker-atx-10-year-together-tour-dec-3rd-tickets-692650515337",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Daybreaker",
+          "link": "https://www.daybreaker.com/event/tenyeartour-atx3/",
+          "link_type": "more info"
+        },
+        {
+          "source": "Do512",
+          "link": "https://do512.com/events/2023/12/3/daybreaker-together-tour-1695087021",
+          "link_type": "more info"
+        },
+        {
+          "source": "CultureMap Austin",
+          "link": "https://austin.culturemap.com/eventdetail/daybreaker-presents-together-tour-2665607146/",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Highbrow Lowbrow Austin",
+        "reviews": 48,
+        "link": "https://www.google.com/search?sca_esv=6ca579d220eaa429&gl=us&hl=en&q=Highbrow+Lowbrow+Austin&ludocid=2325188320767065996&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4r3otSa9Trvq5D7yeVwAHGJV_TEx1KiZS-YC10ga7Cyt4SYNY6eHzALY&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSffxeWRlaegdeaNBN_jwKWT0uMOVWCPC84DV_iAYyicw&s=10"
+    },
+    {
+      "title": "Christmas Concert at Austin Saengerrunde",
+      "date": {
+        "start_date": "Dec 3",
+        "when": "Sun, Dec 3, 2:30 – 4:30 PM"
+      },
+      "address": ["Saengerrunde Hall, 1607 San Jacinto Blvd", "Austin, TX"],
+      "link": "https://austin.kidsoutandabout.com/content/christmas-concert-austin-saengerrunde",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=BfxBTKFrqB1787hk7QoJ6gJZzX2dYIfZ1gP9RSbWuBeoPrBDrXmiP3UzPZdyD4EQitaL9hlD4DNboU7KWJJaqQMZ8Bwg9WVRVU6U9EH7-jTVV7REB9E",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x8644b598b5681aad:0x533f6386741e59e0?sa=X&ved=2ahUKEwii2aLnseeCAxVKSzABHbJVCYoQ9eIBegQIIRAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x8644b598b5681aad%3A0x533f6386741e59e0&engine=google_maps&google_domain=google.com&hl=en&q=Events+in+Austin&type=place"
+      },
+      "description": "The Austin Saengerrunde presents its annual free concert of German Christmas music on Sunday, December 4th at the Saengerrunde Halle, 1607 San Jacinto Blvd., next door to Scholz Garten. The...",
+      "ticket_info": [
+        {
+          "source": "Eventbrite.com",
+          "link": "https://www.eventbrite.com/e/saengerrunde-weihnachtskonzert-christmas-concert-and-market-registration-723014966227",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Kids Out and About Austin",
+          "link": "https://austin.kidsoutandabout.com/content/christmas-concert-austin-saengerrunde",
+          "link_type": "more info"
+        },
+        {
+          "source": "ChatterBlock",
+          "link": "https://www.chatterblock.com/events/383622/christmas-concert-at-austin-saengerrunde/",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Saengerrunde Hall",
+        "reviews": 65,
+        "link": "https://www.google.com/search?sca_esv=6ca579d220eaa429&gl=us&hl=en&q=Saengerrunde+Hall&ludocid=5998622657805703648&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwe5mo7jnhigpXykA8vWmkS40XNG9yQFy1XJSkRnqCx8K7YgAtMv6SAA&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJS7sK80WoWkSP2fIBylnP1UyLdLmfW56N5riipnJhCS1WZRgiMf-pydDejoY&s"
+    },
+    {
+      "title": "A Charlie Brown Christmas",
+      "date": {
+        "start_date": "Dec 2",
+        "when": "Sat, Dec 2, 12:00 – 1:30 PM"
+      },
+      "address": [
+        "Stateside at the Paramount, 719 Congress Ave.",
+        "Austin, TX"
+      ],
+      "link": "https://austinchambermusic.org/a-charlie-brown-christmas/",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=h5FkgrV15SsJLNuLifKbGvFyy_S7y8r-6_Iq_0JZ1etJPdUynXVdpKCalMQ7xqToKM95wD3nBBWNnNpBXdR6wsuvCegAi371MWzmwkKUoexAcDTrKwk",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x8644b509fb62dd35:0x2e05bd15cd4b9520?sa=X&ved=2ahUKEwii2aLnseeCAxVKSzABHbJVCYoQ9eIBegQIKRAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x8644b509fb62dd35%3A0x2e05bd15cd4b9520&engine=google_maps&google_domain=google.com&hl=en&q=Events+in+Austin&type=place"
+      },
+      "description": "Enjoy the Austin Chamber Music Center's annual Charlie Brown celebration at the Stateside Theatre in December! Featuring the music of Vince Guaraldi.",
+      "ticket_info": [
+        {
+          "source": "Ticketmaster.com",
+          "link": "https://www.ticketmaster.com/charlie-brown-christmas-austin-12-02-2023/event/Z7r9jZ1A7ZNGS",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Austin Chamber Music Center",
+          "link": "https://austinchambermusic.org/a-charlie-brown-christmas/",
+          "link_type": "more info"
+        },
+        {
+          "source": "Austin, Texas",
+          "link": "https://www.austintexas.org/event/a-charlie-brown-christmas/377211/",
+          "link_type": "more info"
+        },
+        {
+          "source": "Austin Monthly Magazine",
+          "link": "https://www.austinmonthly.com/events/a-charlie-brown-christmas-330-pm/",
+          "link_type": "more info"
+        },
+        {
+          "source": "Do512",
+          "link": "https://do512.com/events/2023/12/2/a-charlie-brown-christmas-tickets",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Stateside at the Paramount",
+        "reviews": 168,
+        "link": "https://www.google.com/search?sca_esv=6ca579d220eaa429&gl=us&hl=en&q=Stateside+at+the+Paramount&ludocid=3316264601964483872&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRklE-Lwo-sMhEaeOvEJ1HQoQAvkzm9--ajDORk7V-B_4CrPSNTi_Kk7q0&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgCBzSRwWXMi-ahvKBRMMmmklL5nx9wdI3aSjNOQR1qA&s=10"
+    },
+    {
+      "title": "John Pizzarelli",
+      "date": {
+        "start_date": "Nov 30",
+        "when": "Thu, Nov 30, 9 AM"
+      },
+      "address": ["Parker Jazz Club, 117 W 4th St #107b", "Austin, TX"],
+      "link": "https://open.spotify.com/concert/6sBTFaMvXrfuuEFRBUMDjU",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=O6dj8BGpLhKqLCiZ-X3RJqmHOZGVhAuPhLa2s4Mx2plrL7bHGAsEGzce1eKIpyczKXs6Dw_2Qh7z4IOe9wsQ0p-Yts9Rt8vF7eof0jSm1Neu9GujpsA",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x8644b508f6fb03d9:0xf2b410c2fc26af49?sa=X&ved=2ahUKEwii2aLnseeCAxVKSzABHbJVCYoQ9eIBegQIMRAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x8644b508f6fb03d9%3A0xf2b410c2fc26af49&engine=google_maps&google_domain=google.com&hl=en&q=Events+in+Austin&type=place"
+      },
+      "ticket_info": [
+        {
+          "source": "Songkick.com",
+          "link": "http://www.songkick.com/concerts/41488067-john-pizzarelli-at-parker-jazz-club?utm_medium=organic&utm_source=microformat",
+          "link_type": "tickets"
+        },
+        {
+          "source": "Spotify",
+          "link": "https://open.spotify.com/concert/6sBTFaMvXrfuuEFRBUMDjU",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Parker Jazz Club",
+        "reviews": 707,
+        "link": "https://www.google.com/search?sca_esv=6ca579d220eaa429&gl=us&hl=en&q=Parker+Jazz+Club&ludocid=17488621682626572105&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyC-YQvb2OwJMyoqpI_TBaDF6IkwsKoDW4H6g18fBVhfrz5pqNLwQnJk&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3EoOO1Olf1xelVwOGyWaBp8ciScbjK42ijStQBtcvuY9ZXg13LHKJgQmKNuzs&s"
+    },
+    {
+      "title": "Austin Comedy Show",
+      "date": {
+        "start_date": "Nov 28",
+        "when": "Nov 19 – Dec 17"
+      },
+      "address": ["Hi Sign Brewing, 730 Shady Ln", "Austin, TX"],
+      "link": "https://www.austintexas.org/event/austin-comedy-show/377672/",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=SpK4Tn3sGrDafEz5L9M6jrAqr3E-oBX-Q9ALGqIM0gWYn_9_BSoILv09jju6vqu_gB4JmSayGLfAydjAgQcd8opcQNxALOvHe432l27nQIpqR-wSfwY",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x8644b6b9235fb16f:0xcf01654698000daa?sa=X&ved=2ahUKEwii2aLnseeCAxVKSzABHbJVCYoQ9eIBegQIORAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x8644b6b9235fb16f%3A0xcf01654698000daa&engine=google_maps&google_domain=google.com&hl=en&q=Events+in+Austin&type=place"
+      },
+      "description": "The Austin Comedy Show is the premier Sunday comedy showcase bringing you top tier comedians every Sunday to Hi Sign Brewing. Since 2005, our booker has forged relationships with national touring...",
+      "ticket_info": [
+        {
+          "source": "Austin, Texas",
+          "link": "https://www.austintexas.org/event/austin-comedy-show/377672/",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Hi Sign Brewing",
+        "reviews": 361,
+        "link": "https://www.google.com/search?sca_esv=6ca579d220eaa429&gl=us&hl=en&q=Hi+Sign+Brewing&ludocid=14916314794700049834&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKutm4194nVRUdtOVXoKQZKE3HNiyywG2yMMKL8QjgJfxhT0ZwnEv2rRs&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyyjBJucGUkbVZnjnaFnTdb0mpmfHYSON9oVAo67xf8g&s"
+    },
+    {
+      "title": "Austin Blues Festival: Two-Day Pass",
+      "date": {
+        "start_date": "Apr 27",
+        "when": "Apr 27, 2024, 12 PM – Apr 28, 2024, 4 AM"
+      },
+      "address": ["Moody Amphitheater, 1401 Trinity St", "Austin, TX"],
+      "link": "https://app.discotech.me/events/37558676-austin-blues-festival-two-day-pass-at-moody-amphitheater",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=x5CZK4Uv9IAdNWCEh7873l3w6lUadYSNaS10VqiJXW2ELJmuYG1rACxHACxMK3iQ3Gd3gibhGO4cVkSv8O6f5mgzuhnz3_UZDt5_28_ArGPU6EDg3O4",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x8644b538bc720c67:0x582b04b3a6359876?sa=X&ved=2ahUKEwii2aLnseeCAxVKSzABHbJVCYoQ9eIBegQIQRAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x8644b538bc720c67%3A0x582b04b3a6359876&engine=google_maps&google_domain=google.com&hl=en&q=Events+in+Austin&type=place"
+      },
+      "ticket_info": [
+        {
+          "source": "Discotech",
+          "link": "https://app.discotech.me/events/37558676-austin-blues-festival-two-day-pass-at-moody-amphitheater",
+          "link_type": "more info"
+        }
+      ],
+      "venue": {
+        "name": "Moody Amphitheater",
+        "reviews": 688,
+        "link": "https://www.google.com/search?sca_esv=6ca579d220eaa429&gl=us&hl=en&q=Moody+Amphitheater&ludocid=6353176868970403958&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrbOYZcDDS9nlCZ8HOMC27uoYdXYg945kUmWweZD-rtoxej-hW87QMcXY&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNotci-ofLNdxT7_5Tt2dhdte-OQ-byKhPMbksWl0Oo6KxkQFp1yfe0wT_aw&s=10"
+    },
+    {
+      "title": "Ternion Sound X The Widdler - Found Spaces Tour...",
+      "date": {
+        "start_date": "Nov 28",
+        "when": "Nov 10, 10 PM – Dec 9, 2 AM"
+      },
+      "address": ["Kingdom, 505 E 7th St", "Austin, TX"],
+      "link": "https://tickets.primenightcult.com/e/ternion-sound-x-the-widdler-found-spaces-tour-a/tickets",
+      "event_location_map": {
+        "image": "https://www.google.com/maps/vt/data=MrpZDBzsL61qyvq6X3GXvCR0Lq8PpdULKFWfaH6fp3kjSAm-qbXzKsaZV8pXTkNglKHt5AYRimKMIMD_ks5CUOqCcaHKzoLpuDwjC-C7-jCnZYmgUWY",
+        "link": "https://www.google.com/maps/place//data=!4m2!3m1!1s0x8644b5083410fc11:0x34771e972985b70?sa=X&ved=2ahUKEwii2aLnseeCAxVKSzABHbJVCYoQ9eIBegQISRAA&hl=en&gl=us",
+        "serpapi_link": "https://serpapi.com/search.json?data=%214m2%213m1%211s0x8644b5083410fc11%3A0x34771e972985b70&engine=google_maps&google_domain=google.com&hl=en&q=Events+in+Austin&type=place"
+      },
+      "description": "PRIME + MARK MY WORDS PRESENTS: Ternion Sound X The Widdler - Found Spaces Tour| Austin, TX | Nov. 10th | Kingdom | 21+",
+      "ticket_info": [
+        {
+          "source": "Primenightcult.com",
+          "link": "https://tickets.primenightcult.com/e/ternion-sound-x-the-widdler-found-spaces-tour-a/tickets",
+          "link_type": "tickets"
+        }
+      ],
+      "venue": {
+        "name": "Kingdom",
+        "reviews": 281,
+        "link": "https://www.google.com/search?sca_esv=6ca579d220eaa429&gl=us&hl=en&q=Kingdom&ludocid=236282752924146544&ibp=gwp%3B0,7"
+      },
+      "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGjaNeAtpvKaZ9N8JfjfDkMjD8WMfHBWR23h919MNhn8geGZeVoCVIftw&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxY59tvZ7wQAOtaPx2Gu71EE_6lh7cf5TZ3RPzMnHPDHcRi9x4A743JiTJ9A&s"
+    }
+  ]
+}

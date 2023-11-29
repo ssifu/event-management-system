@@ -5,6 +5,26 @@ Home Page
 {%endblock page_title %} 
 
 {% block content %}
-<h1>Hello {{ username }}</h1>
-{% include "./event-card.html" %}
+{% comment %} <h1>Hello {{ username }}</h1> {% endcomment %}
+{% include "./navbar.html" with fullname=user_fullname%}
+<h1 class="title">All Events</h1>
+<hr>
+<div class="events-container">
+{% if unregistered_events %}
+    {% for item in unregistered_events %}
+        {% include "./event-card.html" with event=item %}
+    {% endfor %}
+    {% else %}<h1 class="title">All events registered...</h1>
+{% endif %}
+</div>
+<h1 class="title">Registered Events</h1>
+<hr>
+<div class="events-container">
+    {% if registered_events %}
+        {% for item in registered_events %}
+            {% include "./event-card.html" with event=item is_registered=True %}
+        {% endfor %}
+    {% else %} <a class="title" href="#">Register some events...</a>
+    {% endif %}
+    </div>
 {% endblock content %}

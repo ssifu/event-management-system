@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static "event_management/styles.css" %}" />
     <link rel="stylesheet" href="{% static "event_management/event-card.css" %}" />
+    <link rel="stylesheet" href="{% static "event_management/navbar.css" %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% block page_css %}{% endblock page_css %}
     <title>{% block page_title %}Title{% endblock page_title %}</title>
   </head>
   <body>

@@ -22,16 +22,16 @@
               <div class="user-full-name-input">
                 <div class="field padding-bottom--24">
                   <label class="input-label" for="firstname">First Name</label>
-                  <input type="text" name="firstname" />
+                  <input type="text" name="firstname" required />
                 </div>
                 <div class="field padding-bottom--24">
                   <label class="input-label" for="lastname">Last Name</label>
-                  <input type="text" name="lastname" />
+                  <input type="text" name="lastname" required />
                 </div>
               </div>
               <div class="field padding-bottom--24">
                 <label class="input-label" for="username">Username</label>
-                <input type="text" name="username" />
+                <input type="text" name="username" required />
                 {% if messages %}
                       {% for message in messages %}
                           {% if 'duplicate_username' in message.tags %}
@@ -43,11 +43,11 @@
               </div>
               <div class="field padding-bottom--24">
                 <label class="input-label" for="email">Email</label>
-                <input type="email" name="email" />
+                <input type="email" name="email" required />
               </div>
               <div class="field padding-bottom--24">
                 <label class="input-label" for="password">Password</label>
-                <input type="password" name="password" />
+                <input type="password" name="password" required  />
               </div>
               <div class="field padding-bottom--24">
                 <input type="submit" name="submit" value="Signup" />
