@@ -134,6 +134,19 @@ class EventRegistrationView(View):
 
         return redirect(reverse('home', kwargs={'username': request.session['username']}))
 
+class UnregisterEvent(View):
+    def post(self, request, event_id):
+        user = Users.objects.get(username=request.session['username'])
+        event = Event.objects.get(id=event_id)
+
+        # Retrieve the existing UserEventRegistration instance
+        registered_event = get_object_or_404(UserEventRegistration, user=user, event=event)
+
+        # Delete the existing instance
+        registered_event.delete()
+
+        return redirect(reverse('home', kwargs={'username': request.session['username']}))
+
 # API endpoints view
 
 

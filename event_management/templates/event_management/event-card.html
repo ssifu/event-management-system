@@ -6,6 +6,11 @@
           {% csrf_token %}
           <button class="register-button">Register</button>
         </form>
+        {% else %}
+        <form action="{% url 'cancel_registration' event.event.id %}" method="POST">
+          {% csrf_token %}
+          <button class="register-button">Unregister</button>
+        </form>
       {% endif %}
     
     </div>
