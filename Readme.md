@@ -4,9 +4,6 @@
 
 The Event Management System is a web application built using Django, a Python web framework. It provides functionality for users to create, manage, and register for events. The system ensures user authentication, allowing only registered users to participate in events. Additionally, it features a user-friendly interface and a basic search functionality.
 
-### Live Demo: 
-[Event Management System](https://ssifu.pythonanywhere.com)
-
 ## Features
 
 - **User Registration:** New users can create accounts, providing their basic details such as first name, last name, username, email, and password.
