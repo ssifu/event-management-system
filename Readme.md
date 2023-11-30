@@ -11,15 +11,11 @@ The Event Management System is a web application built using Django, a Python we
 
 - **User Registration:** New users can create accounts, providing their basic details such as first name, last name, username, email, and password.
 
-- **Event Creation:** Users can create events with details such as title, description, date, time, location name, and maximum available slots.
-
 - **Event Registration:** Registered users can sign up for events, with a limit on the number of available slots.
 
 - **User Authentication:** Only authenticated users can register for events. Users are only allowed to unregister from events they've previously registered for.
 
 - **Admin Panel:** Django's admin panel is utilized for managing events and user registrations. Admins have control over the system's data.
-
-- **Search Functionality:** A basic search functionality is implemented, allowing users to find events based on keywords.
 
 - **User Dashboard:** Users have access to a personalized dashboard where they can view and manage the events they've registered for.
 
@@ -64,12 +60,6 @@ The project consists of Django models for Users, Events, and UserEventRegistrati
 - **Endpoint:** `/api/events/<event_id>/`
 - **Method:** GET
 - **Description:** Retrieve details of a specific event identified by `event_id`.
-
-### User Registration for an Event
-
-- **Endpoint:** `/api/user/register-event/`
-- **Method:** POST
-- **Description:** Register a user for a specific event.
 
 ### User's Registered Events
 
